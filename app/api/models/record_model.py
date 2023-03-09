@@ -1,123 +1,125 @@
 from pydantic import BaseModel
+from typing import Optional
+import numpy
 
 class Record(BaseModel):
-    VAR2: str
-    IDADE: float
-    VAR5: str
-    VAR6: float
-    VAR7: float
-    VAR8: str
-    VAR9: str
-    VAR10: str
-    VAR11: float
-    VAR12: float
-    VAR14: float
-    VAR15: float
-    VAR16: float
-    VAR18: float
-    VAR19: float
-    VAR22: float
-    VAR24: float
-    VAR25: float
-    VAR32: str
-    VAR39: float
-    VAR40: float
-    VAR41: float
-    VAR42: float
-    VAR47: float
-    VAR49: str
-    VAR50: str
-    VAR51: str
-    VAR52: str
-    VAR53: str
-    VAR54: str
-    VAR55: str
-    VAR56: str
-    VAR57: str
-    VAR58: str
-    VAR59: str
-    VAR60: str
-    VAR61: str
-    VAR62: str
-    VAR63: str
-    VAR64: str
-    VAR65: str
-    VAR66: str
-    VAR67: str
-    VAR68: str
-    VAR69: str
-    VAR70: str
-    VAR71: str
-    VAR72: str
-    VAR73: str
-    VAR74: str
-    VAR75: str
-    VAR76: str
-    VAR77: str
-    VAR78: str
-    VAR79: str
-    VAR80: str
-    VAR81: str
-    VAR82: str
-    VAR83: str
-    VAR84: str
-    VAR85: str
-    VAR86: str
-    VAR87: str
-    VAR88: str
-    VAR89: str
-    VAR90: str
-    VAR91: str
-    VAR92: str
-    VAR93: str
-    VAR94: str
-    VAR95: str
-    VAR96: str
-    VAR97: str
-    VAR98: str
-    VAR99: str
-    VAR100: str
-    VAR101: str
-    VAR102: str
-    VAR103: str
-    VAR104: str
-    VAR105: str
-    VAR106: str
-    VAR107: str
-    VAR108: str
-    VAR109: str
-    VAR110: str
-    VAR111: str
-    VAR112: str
-    VAR113: str
-    VAR114: str
-    VAR115: str
-    VAR116: str
-    VAR117: str
-    VAR118: str
-    VAR119: str
-    VAR120: str
-    VAR121: str
-    VAR122: str
-    VAR123: str
-    VAR124: str
-    VAR125: str
-    VAR126: str
-    VAR127: str
-    VAR128: str
-    VAR129: str
-    VAR130: str
-    VAR131: str
-    VAR132: str
-    VAR133: str
-    VAR134: str
-    VAR135: str
-    VAR136: str
-    VAR137: str
-    VAR138: str
-    VAR139: str
-    VAR140: str
-    VAR141: float
-    VAR142: str
-    REF_DATE: str
+    VAR2: Optional[str] = numpy.NaN
+    IDADE: Optional[float] = numpy.NaN
+    VAR5: Optional[str] = numpy.NaN
+    VAR6: Optional[float] = numpy.NaN
+    VAR7: Optional[float] = numpy.NaN
+    VAR8: Optional[str] = numpy.NaN
+    VAR9: Optional[str] = numpy.NaN
+    VAR10: Optional[str] = numpy.NaN
+    VAR11: Optional[float] = numpy.NaN
+    VAR12: Optional[float] = numpy.NaN
+    VAR14: Optional[float] = numpy.NaN
+    VAR15: Optional[float] = numpy.NaN
+    VAR16: Optional[float] = numpy.NaN
+    VAR18: Optional[float] = numpy.NaN
+    VAR19: Optional[float] = numpy.NaN
+    VAR22: Optional[float] = numpy.NaN
+    VAR24: Optional[float] = numpy.NaN
+    VAR25: Optional[float] = numpy.NaN
+    VAR32: Optional[str] = numpy.NaN
+    VAR39: Optional[float] = numpy.NaN
+    VAR40: Optional[float] = numpy.NaN
+    VAR41: Optional[float] = numpy.NaN
+    VAR42: Optional[float] = numpy.NaN
+    VAR47: Optional[float] = numpy.NaN
+    VAR49: Optional[str] = numpy.NaN
+    VAR50: Optional[str] = numpy.NaN
+    VAR51: Optional[str] = numpy.NaN
+    VAR52: Optional[str] = numpy.NaN
+    VAR53: Optional[str] = numpy.NaN
+    VAR54: Optional[str] = numpy.NaN
+    VAR55: Optional[str] = numpy.NaN
+    VAR56: Optional[str] = numpy.NaN
+    VAR57: Optional[str] = numpy.NaN
+    VAR58: Optional[str] = numpy.NaN
+    VAR59: Optional[str] = numpy.NaN
+    VAR60: Optional[str] = numpy.NaN
+    VAR61: Optional[str] = numpy.NaN
+    VAR62: Optional[str] = numpy.NaN
+    VAR63: Optional[str] = numpy.NaN
+    VAR64: Optional[str] = numpy.NaN
+    VAR65: Optional[str] = numpy.NaN
+    VAR66: Optional[str] = numpy.NaN
+    VAR67: Optional[str] = numpy.NaN
+    VAR68: Optional[str] = numpy.NaN
+    VAR69: Optional[str] = numpy.NaN
+    VAR70: Optional[str] = numpy.NaN
+    VAR71: Optional[str] = numpy.NaN
+    VAR72: Optional[str] = numpy.NaN
+    VAR73: Optional[str] = numpy.NaN
+    VAR74: Optional[str] = numpy.NaN
+    VAR75: Optional[str] = numpy.NaN
+    VAR76: Optional[str] = numpy.NaN
+    VAR77: Optional[str] = numpy.NaN
+    VAR78: Optional[str] = numpy.NaN
+    VAR79: Optional[str] = numpy.NaN
+    VAR80: Optional[str] = numpy.NaN
+    VAR81: Optional[str] = numpy.NaN
+    VAR82: Optional[str] = numpy.NaN
+    VAR83: Optional[str] = numpy.NaN
+    VAR84: Optional[str] = numpy.NaN
+    VAR85: Optional[str] = numpy.NaN
+    VAR86: Optional[str] = numpy.NaN
+    VAR87: Optional[str] = numpy.NaN
+    VAR88: Optional[str] = numpy.NaN
+    VAR89: Optional[str] = numpy.NaN
+    VAR90: Optional[str] = numpy.NaN
+    VAR91: Optional[str] = numpy.NaN
+    VAR92: Optional[str] = numpy.NaN
+    VAR93: Optional[str] = numpy.NaN
+    VAR94: Optional[str] = numpy.NaN
+    VAR95: Optional[str] = numpy.NaN
+    VAR96: Optional[str] = numpy.NaN
+    VAR97: Optional[str] = numpy.NaN
+    VAR98: Optional[str] = numpy.NaN
+    VAR99: Optional[str] = numpy.NaN
+    VAR100: Optional[str] = numpy.NaN
+    VAR101: Optional[str] = numpy.NaN
+    VAR102: Optional[str] = numpy.NaN
+    VAR103: Optional[str] = numpy.NaN
+    VAR104: Optional[str] = numpy.NaN
+    VAR105: Optional[str] = numpy.NaN
+    VAR106: Optional[str] = numpy.NaN
+    VAR107: Optional[str] = numpy.NaN
+    VAR108: Optional[str] = numpy.NaN
+    VAR109: Optional[str] = numpy.NaN
+    VAR110: Optional[str] = numpy.NaN
+    VAR111: Optional[str] = numpy.NaN
+    VAR112: Optional[str] = numpy.NaN
+    VAR113: Optional[str] = numpy.NaN
+    VAR114: Optional[str] = numpy.NaN
+    VAR115: Optional[str] = numpy.NaN
+    VAR116: Optional[str] = numpy.NaN
+    VAR117: Optional[str] = numpy.NaN
+    VAR118: Optional[str] = numpy.NaN
+    VAR119: Optional[str] = numpy.NaN
+    VAR120: Optional[str] = numpy.NaN
+    VAR121: Optional[str] = numpy.NaN
+    VAR122: Optional[str] = numpy.NaN
+    VAR123: Optional[str] = numpy.NaN
+    VAR124: Optional[str] = numpy.NaN
+    VAR125: Optional[str] = numpy.NaN
+    VAR126: Optional[str] = numpy.NaN
+    VAR127: Optional[str] = numpy.NaN
+    VAR128: Optional[str] = numpy.NaN
+    VAR129: Optional[str] = numpy.NaN
+    VAR130: Optional[str] = numpy.NaN
+    VAR131: Optional[str] = numpy.NaN
+    VAR132: Optional[str] = numpy.NaN
+    VAR133: Optional[str] = numpy.NaN
+    VAR134: Optional[str] = numpy.NaN
+    VAR135: Optional[str] = numpy.NaN
+    VAR136: Optional[str] = numpy.NaN
+    VAR137: Optional[str] = numpy.NaN
+    VAR138: Optional[str] = numpy.NaN
+    VAR139: Optional[str] = numpy.NaN
+    VAR140: Optional[str] = numpy.NaN
+    VAR141: Optional[float] = numpy.NaN
+    VAR142: Optional[str] = numpy.NaN
+    REF_DATE: Optional[str] = numpy.NaN
     TARGET: bool
