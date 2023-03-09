@@ -3,7 +3,6 @@ import uvicorn
 from fastapi import FastAPI
 from api.routers import router
 
-
 app = FastAPI(title='Monitoramento de modelos', version="1.0.0")
 
 
