@@ -13,7 +13,7 @@ uvicorn main:app --reload
 
 ## 2. Diretorios
 - As funções com lógica estão junto das rotas na pasta de [endpoints](https://github.com/joaovictorbelo/Neurotech-challenge-data-scientist/tree/main/app/api/endpoints) nos arquivos de cada funcionalidade. </br>
-- As funções reutilizadas foram colocadas na pasta de [utils]((https://github.com/joaovictorbelo/Neurotech-challenge-data-scientist/tree/main/app/utils))
+- As funções reutilizadas foram colocadas na pasta de [utils](https://github.com/joaovictorbelo/Neurotech-challenge-data-scientist/tree/main/app/utils)
 - Os modelos basicos de request usando pydantic estão na pasta de [models](https://github.com/joaovictorbelo/Neurotech-challenge-data-scientist/tree/main/app/api/models) </br>
 - O modelo pickle pré-treinado fornecido no desafio esta na pasta [ml_models](https://github.com/joaovictorbelo/Neurotech-challenge-data-scientist/tree/main/ml_models)
 
@@ -54,7 +54,7 @@ uvicorn main:app --reload
 }
 ```
 
-### 3.2 Volumetria e Performance
+### 3.2 Aderência
 - <b>ROTA:</b> `http://localhost:8001/v1/aderencia`
 - <b>MÉTODO:</b> `POST`
 - <b>BODY REQUISIÇÃO:</b> JSON com uma variavel nomeada 'path' contendo o caminho local do arquivo de dataset:
@@ -66,6 +66,8 @@ uvicorn main:app --reload
 - <b>RESPOSTA</b>: JSON contendo os dados de volumetria e performance, distribuidos da seguinte maneira:
 ```js
 {
-    "volumetria": [stat_do_teste_kolmogorov_smirnov]
+    "aderencia": [stat_do_teste_kolmogorov_smirnov]
 }
 ```
+
+## 4. Resultados
