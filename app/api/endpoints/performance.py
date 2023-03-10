@@ -34,11 +34,11 @@ async def Performance(data: list[Record]):
     #getting the volumetrics
     volumetrics = countRecordsByMonth(datetimes).to_json()
     
+    #using pandas to read the pickle file (using absolute path in my pc) 
     model = pd.read_pickle("/mnt/d/coding/neurotech/ps/Neurotech-challenge-data-scientist/ml_models/model.pkl")
 
     perf = calculatePerformance(df, model)
-
-    print('ROC auc for test dataframe:', perf)
+    #print('ROC auc for test dataframe:', perf)
     
     #returning
     response = {
