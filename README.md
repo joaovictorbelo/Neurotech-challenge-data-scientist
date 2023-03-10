@@ -71,3 +71,4 @@ uvicorn main:app --reload
 ```
 
 ## 4. Resultados
+Os resultados das requisições da API estão no arquivo do jupyter [notebook](https://github.com/joaovictorbelo/Neurotech-challenge-data-scientist/tree/main/testes.ipynb) que se encontra nesse repositorio

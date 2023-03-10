@@ -5,7 +5,7 @@ import numpy as np
 import pandas as pd
 from scipy import stats
 from ..models.path_model import Path
-from ...utils.functions import calculateProbability
+from ..utils.functions import calculateProbability
 
 router = APIRouter(prefix="/aderencia")
 
