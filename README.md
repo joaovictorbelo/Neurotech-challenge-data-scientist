@@ -21,27 +21,27 @@ uvicorn main:app --reload
 - <b>ROTA:</b> `http://localhost:8001/v1/performance`
 - <b>MÉTODO:</b> `POST`
 - <b>BODY REQUISIÇÃO:</b> Exatamente como os dados estão dispostos no arquivo: [batch_records](https://github.com/joaovictorbelo/Neurotech-challenge-data-scientist/blob/main/batch_records.json):
-```
+```js
 [
     {
-        VAR2: [str]
-        IDADE: [float]
+        "VAR2": [str]
+        "IDADE": [float]
         ⋮
-        REF_DATE: [str]
-        TARGET: [int]
+        "REF_DATE": [str]
+        "TARGET": [int]
     },
     {
-        VAR2: [str]
-        IDADE: [float]
+        "VAR2": [str]
+        "IDADE": [float]
         ⋮
-        REF_DATE: [str]
-        TARGET: [int]
+        "REF_DATE": [str]
+        "TARGET": [int]
     },
     ⋮
 ]
 ```
 - <b>RESPOSTA</b>: JSON contendo os dados de volumetria e performance, distribuidos da seguinte maneira:
-```
+```js
 {
     "volumetria": 
     {
