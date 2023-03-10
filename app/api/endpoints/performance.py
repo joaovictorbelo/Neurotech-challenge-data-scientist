@@ -5,7 +5,7 @@ import json
 from sklearn.metrics import  roc_auc_score
 from ..models.record_model import Record
 from fastapi.encoders import jsonable_encoder
-from ..utils.perf_functions import (calculateVolumetrics, calculateProbability)
+from ...utils.functions import (calculateVolumetrics, calculateProbability)
 
 router = APIRouter(prefix="/performance")
 
